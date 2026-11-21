@@ -156,3 +156,41 @@ print("=" * 50)
 print("Total Students Analysed:", len(df))
 print("Class Average:", round(df["Average_Marks"].mean(), 2))
 print("Report saved in reports folder.")
+
+# 11. HISTOGRAM
+
+plt.figure(figsize=(8, 5))
+plt.hist(df["Average_Marks"], bins=5)
+plt.title("Average Marks Distribution")
+plt.xlabel("Average Marks")
+plt.ylabel("Number of Students")
+plt.savefig("images/average_marks_histogram.png")
+plt.show()
+
+# 12. SCATTER PLOT
+
+plt.figure(figsize=(8, 5))
+plt.scatter(df["Study_Hours"], df["Average_Marks"])
+plt.title("Study Hours vs Average Marks")
+plt.xlabel("Study Hours")
+plt.ylabel("Average Marks")
+plt.savefig("images/study_hours_scatter.png")
+plt.show()
+
+# 13. BOX PLOT
+
+plt.figure(figsize=(8, 5))
+sns.boxplot(data=df[["Math_Score", "Science_Score", "English_Score"]])
+plt.title("Subject Scores Box Plot")
+plt.savefig("images/subject_scores_boxplot.png")
+plt.show()
+
+# 14. CORRELATION HEATMAP
+
+plt.figure(figsize=(8, 5))
+sns.heatmap(df.corr(numeric_only=True), annot=True, cmap="coolwarm")
+plt.title("Student Performance Correlation")
+plt.savefig("images/student_correlation_heatmap.png")
+plt.show()
+
+print("All additional graphs created successfully!")
