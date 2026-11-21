@@ -149,3 +149,51 @@ Sagili Varshini
 
 GitHub: https://github.com/sagilivarshini7-2008
 - AI/ML EDA PDF Report.
+
+## AI/ML Project Lifecycle
+
+```mermaid
+flowchart TD
+A[Problem Definition] --> B[Data Collection]
+B --> C[Data Cleaning]
+C --> D[Exploratory Data Analysis]
+D --> E[Model Development]
+E --> F[Model Evaluation]
+F --> G[Model Deployment]
+G --> H[Monitoring and Improvement]
+
+[17:39, 21/11/2026] +91 93980 23619: ## EDA Workflow
+
+```mermaid
+flowchart TD
+A[Load Dataset] --> B[Understand Data]
+B --> C[Check Missing Values]
+C --> D[Clean Data]
+D --> E[Statistical Analysis]
+E --> F[Create Visualizations]
+F --> G[Find Insights]
+G --> H[Prepare Report]
+
+ ## Git and GitHub Workflow
+
+```mermaid
+flowchart TD
+A[Create Project] --> B[Write Code]
+B --> C[Git Add]
+C --> D[Git Commit]
+D --> E[Git Push]
+E --> F[GitHub Repository]
+
+
+ ## Project Folder Structure
+
+```mermaid
+flowchart TD
+A[AI-ML-Internship] --> B[data]
+A --> C[src]
+A --> D[images]
+A --> E[reports]
+A --> F[notebooks]
+A --> G[models]
+A --> H[requirements.txt]
+A --> I[README.md]
