@@ -62,3 +62,10 @@ print("\nModel Accuracy:", accuracy * 100, "%")
 # Classification report
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred, target_names=iris.target_names))
+
+import joblib
+
+# Save trained model
+joblib.dump(model, "models/iris_model.pkl")
+
+print("Model saved successfully!")
