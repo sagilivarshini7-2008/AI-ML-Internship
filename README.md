@@ -31,6 +31,7 @@ Technologies Used
 - Jupyter Notebook
 - Git and GitHub
 - VS Code
+- ReportLab
 
 Project Structure
 
@@ -51,8 +52,17 @@ AI-ML-Internship/
 │   └── generate_report.py
 │
 ├── images/
-│   ├── Student performance graphs (7 PNG files)
-│   └── Iris dataset graphs (4 PNG files)
+│   ├── student_average_performance.png
+│   ├── subject_performance.png
+│   ├── grade_distribution.png
+│   ├── average_marks_histogram.png
+│   ├── study_hours_scatter.png
+│   ├── subject_scores_boxplot.png
+│   ├── student_correlation_heatmap.png
+│   ├── iris_histogram.png
+│   ├── iris_scatter_plot.png
+│   ├── iris_boxplot.png
+│   └── iris_heatmap.png
 │
 ├── reports/
 │   ├── student_performance_report.csv
@@ -75,7 +85,7 @@ Tasks Completed
 3. NumPy Basics
 4. Pandas Basics
 5. Data Cleaning
-6. Exploratory Data Analysis (EDA)
+6. Exploratory Data Analysis
 7. Data Visualization
 8. Iris Dataset – Machine Learning Classification
 9. Student Performance Data Explorer
@@ -99,21 +109,27 @@ The project analyses student marks across Mathematics, Science and English.
 It performs the following operations:
 
 - Reads student data from a CSV file.
+- Checks and handles missing values.
+- Removes duplicate records.
 - Calculates average marks.
 - Assigns grades based on student performance.
 - Identifies top and lowest-performing students.
 - Calculates class and subject-wise averages.
 - Generates performance visualizations.
-- Exports the analysed results into a CSV report.
+- Exports analysed results into a CSV report.
 
 Project Outputs
 
 - Student performance analysis.
 - Class average and subject-wise averages.
 - Student grades.
-- Performance visualizations.
+- 7 student performance graphs.
+- 4 Iris dataset graphs.
+- Correlation heatmaps.
 - Exported CSV report.
 - Trained Iris machine learning model.
+- AI/ML EDA PDF report.
+- Jupyter Notebook with code and outputs.
 
 How to Run
 
@@ -137,6 +153,53 @@ python src/student_performance.py
 
 python src/iris_dataset.py
 
+6. Generate the PDF report
+
+python src/generate_report.py
+
+AI/ML Project Lifecycle
+
+flowchart TD
+A[Problem Definition] --> B[Data Collection]
+B --> C[Data Cleaning]
+C --> D[Exploratory Data Analysis]
+D --> E[Model Development]
+E --> F[Model Evaluation]
+F --> G[Model Deployment]
+G --> H[Monitoring and Improvement]
+
+EDA Workflow
+
+flowchart TD
+A[Load Dataset] --> B[Understand Data]
+B --> C[Check Missing Values]
+C --> D[Clean Data]
+D --> E[Statistical Analysis]
+E --> F[Create Visualizations]
+F --> G[Find Insights]
+G --> H[Prepare Report]
+
+Git and GitHub Workflow
+
+flowchart TD
+A[Create Project] --> B[Write Code]
+B --> C[Git Add]
+C --> D[Git Commit]
+D --> E[Git Push]
+E --> F[GitHub Repository]
+
+Project Folder Structure Diagram
+
+flowchart TD
+A[AI-ML-Internship] --> B[data]
+A --> C[src]
+A --> D[images]
+A --> E[reports]
+A --> F[notebooks]
+A --> G[models]
+A --> H[requirements.txt]
+A --> I[README.md]
+
 Conclusion
 
 This internship project provided practical experience in Python programming, data manipulation, data cleaning, exploratory data analysis, visualization and machine learning.
@@ -148,52 +211,3 @@ Author
 Sagili Varshini
 
 GitHub: https://github.com/sagilivarshini7-2008
-- AI/ML EDA PDF Report.
-
-## AI/ML Project Lifecycle
-
-```mermaid
-flowchart TD
-A[Problem Definition] --> B[Data Collection]
-B --> C[Data Cleaning]
-C --> D[Exploratory Data Analysis]
-D --> E[Model Development]
-E --> F[Model Evaluation]
-F --> G[Model Deployment]
-G --> H[Monitoring and Improvement]
-
-[17:39, 21/11/2026] +91 93980 23619: ## EDA Workflow
-
-```mermaid
-flowchart TD
-A[Load Dataset] --> B[Understand Data]
-B --> C[Check Missing Values]
-C --> D[Clean Data]
-D --> E[Statistical Analysis]
-E --> F[Create Visualizations]
-F --> G[Find Insights]
-G --> H[Prepare Report]
-
- ## Git and GitHub Workflow
-
-```mermaid
-flowchart TD
-A[Create Project] --> B[Write Code]
-B --> C[Git Add]
-C --> D[Git Commit]
-D --> E[Git Push]
-E --> F[GitHub Repository]
-
-
- ## Project Folder Structure
-
-```mermaid
-flowchart TD
-A[AI-ML-Internship] --> B[data]
-A --> C[src]
-A --> D[images]
-A --> E[reports]
-A --> F[notebooks]
-A --> G[models]
-A --> H[requirements.txt]
-A --> I[README.md]
