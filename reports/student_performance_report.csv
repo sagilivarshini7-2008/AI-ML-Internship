@@ -1,0 +1,16 @@
+Student_ID,Name,Gender,Study_Hours,Attendance,Math_Score,Science_Score,English_Score,Average_Marks,Grade
+1,Varshini,Female,4,90,85,88,92,88.33333333333333,B
+2,Rahul,Male,2,75,65,70,68,67.66666666666667,D
+3,Priya,Female,5,95,92,94,90,92.0,A
+4,Arjun,Male,3,80,75,78,72,75.0,C
+5,Sneha,Female,6,98,95,96,94,95.0,A
+6,Kiran,Male,2,70,60,65,62,62.333333333333336,D
+7,Ananya,Female,4,88,82,85,89,85.33333333333333,B
+8,Vikram,Male,3,85,78,80,76,78.0,C
+9,Meera,Female,5,92,90,91,95,92.0,A
+10,Aditya,Male,1,65,55,60,58,57.666666666666664,F
+11,Divya,Female,4,89,87,90,93,90.0,A
+12,Rohan,Male,3,78,72,75,70,72.33333333333333,C
+13,Kavya,Female,6,96,94,92,97,94.33333333333333,A
+14,Manoj,Male,2,73,68,62,65,65.0,D
+15,Anjali,Female,5,94,91,95,92,92.66666666666667,A
