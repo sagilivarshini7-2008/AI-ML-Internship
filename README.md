@@ -47,15 +47,16 @@ AI-ML-Internship/
 │   ├── data_cleaning.py
 │   ├── eda_analysis.py
 │   ├── iris_dataset.py
-│   └── student_performance.py
+│   ├── student_performance.py
+│   └── generate_report.py
 │
 ├── images/
-│   ├── student_average_performance.png
-│   ├── subject_performance.png
-│   └── grade_distribution.png
+│   ├── Student performance graphs (7 PNG files)
+│   └── Iris dataset graphs (4 PNG files)
 │
 ├── reports/
-│   └── student_performance_report.csv
+│   ├── student_performance_report.csv
+│   └── AI_ML_EDA_Report.pdf
 │
 ├── notebooks/
 │   └── task1.ipynb
@@ -147,3 +148,4 @@ Author
 Sagili Varshini
 
 GitHub: https://github.com/sagilivarshini7-2008
+- AI/ML EDA PDF Report.
